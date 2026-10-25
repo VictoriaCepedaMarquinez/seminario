@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentoListaPeliculas">
+
+    <fragment
+        android:id="@+id/fragmentoListaPeliculas"
+        android:name="ar.edu.unicen.seminario.ui.lista.FragmentoListaPeliculas"
+        android:label="@string/titulo_peliculas"
+        tools:layout="@layout/fragmento_lista_peliculas">
+
+        <action
+            android:id="@+id/accionListaADetalle"
+            app:destination="@id/fragmentoDetallePelicula" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentoDetallePelicula"
+        android:name="ar.edu.unicen.seminario.ui.detalle.FragmentoDetallePelicula"
+        android:label="@string/titulo_detalle_pelicula"
+        tools:layout="@layout/fragmento_detalle_pelicula">
+
+        <argument
+            android:name="idPelicula"
+            app:argType="integer" />
+    </fragment>
+</navigation>

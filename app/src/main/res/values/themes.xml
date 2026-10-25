@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Tema.Seminario" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorOnPrimary">@color/sobre_primario</item>
+        <item name="colorPrimaryContainer">@color/contenedor_primario</item>
+        <item name="colorOnPrimaryContainer">@color/sobre_contenedor_primario</item>
+        <item name="colorSecondary">@color/secundario</item>
+        <item name="colorOnSecondary">@color/sobre_secundario</item>
+        <item name="colorSecondaryContainer">@color/contenedor_secundario</item>
+        <item name="colorOnSecondaryContainer">@color/sobre_contenedor_secundario</item>
+        <item name="colorTertiary">@color/terciario</item>
+        <item name="colorOnTertiary">@color/sobre_terciario</item>
+        <item name="colorTertiaryContainer">@color/contenedor_terciario</item>
+        <item name="colorOnTertiaryContainer">@color/sobre_contenedor_terciario</item>
+        <item name="android:colorBackground">@color/fondo</item>
+        <item name="colorOnBackground">@color/sobre_fondo</item>
+        <item name="colorSurface">@color/superficie</item>
+        <item name="colorOnSurface">@color/sobre_superficie</item>
+        <item name="colorSurfaceVariant">@color/superficie_variante</item>
+        <item name="colorOnSurfaceVariant">@color/sobre_superficie_variante</item>
+        <item name="colorOutline">@color/contorno</item>
+        <item name="colorOutlineVariant">@color/contorno_variante</item>
+        <item name="shapeAppearanceCornerSmall">@style/Forma.Seminario.Chica</item>
+        <item name="shapeAppearanceCornerMedium">@style/Forma.Seminario.Mediana</item>
+        <item name="toolbarStyle">@style/Widget.Seminario.BarraHerramientas</item>
+    </style>
+
+    <style name="Tema.Seminario" parent="Base.Tema.Seminario">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+    </style>
+
+    <style name="Forma.Seminario.Chica" parent="ShapeAppearance.Material3.Corner.Small">
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="Forma.Seminario.Mediana" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Forma.Seminario.Poster" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="Widget.Seminario.BarraHerramientas" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/TextoApariencia.Seminario.TituloBarra</item>
+    </style>
+
+    <style name="TextoApariencia.Seminario.TituloBarra" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Seminario.Tarjeta.Pelicula" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/tarjeta</item>
+        <item name="cardElevation">2dp</item>
+        <item name="shapeAppearance">@style/Forma.Seminario.Mediana</item>
+    </style>
+
+    <style name="Widget.Seminario.EtiquetaPuntuacion" parent="">
+        <item name="android:background">@drawable/fondo_puntuacion</item>
+        <item name="android:drawableStart">@drawable/ic_estrella</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:drawableTint">?attr/colorOnTertiaryContainer</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
+        <item name="android:textColor">?attr/colorOnTertiaryContainer</item>
+    </style>
+
+    <style name="Widget.Seminario.TextoDato" parent="">
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:drawableTint">?attr/colorOnSurfaceVariant</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodyMedium</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+</resources>

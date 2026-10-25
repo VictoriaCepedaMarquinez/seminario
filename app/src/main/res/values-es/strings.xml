@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nombre_app">Cinetheo</string>
+    <string name="titulo_peliculas">Películas</string>
+    <string name="pestana_populares">Populares</string>
+    <string name="pestana_tendencias">Tendencias de la semana</string>
+    <string name="titulo_detalle_pelicula">Detalle de la película</string>
+    <string name="pista_busqueda">Buscar películas</string>
+    <string name="sin_peliculas">No se encontraron películas</string>
+    <string name="reintentar">Reintentar</string>
+    <string name="sinopsis">Sinopsis</string>
+    <string name="sinopsis_no_disponible">Sinopsis no disponible.</string>
+    <string name="no_disponible">No disponible</string>
+    <string name="duracion">%1$d h %2$02d min</string>
+    <string name="duracion_minutos">%1$d min</string>
+    <string name="puntuacion_corta">%1$.1f</string>
+    <string name="puntuacion_detalle">%1$.1f / 10</string>
+    <string name="poster_generico">Póster de la película</string>
+    <string name="descripcion_poster">Póster de %1$s</string>
+    <plurals name="cantidad_votos">
+        <item quantity="one">%1$d voto</item>
+        <item quantity="many">%1$d votos</item>
+        <item quantity="other">%1$d votos</item>
+    </plurals>
+
+    <string name="error_sin_internet">Sin conexión a internet. Verificá el Wi-Fi o los datos móviles e intentá de nuevo.</string>
+    <string name="error_tiempo_agotado">El servidor está tardando demasiado en responder. Intentá de nuevo.</string>
+    <string name="error_red">No se pudo conectar con el servicio de películas. Verificá tu conexión e intentá de nuevo.</string>
+    <string name="error_no_autorizado">No se pudo autenticar con el servicio de películas. Revisá las credenciales de la API.</string>
+    <string name="error_no_encontrado">No se encontró la película solicitada.</string>
+    <string name="error_servidor">El servicio de películas no está disponible en este momento. Intentá más tarde.</string>
+    <string name="error_datos_invalidos">La información recibida no es válida.</string>
+    <string name="error_desconocido">Ocurrió un error inesperado. Intentá de nuevo.</string>
+</resources>

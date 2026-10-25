@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.lista.FragmentoListaPeliculas">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/pestanas"
+        style="@style/Widget.Material3.TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorBackground"
+        app:tabGravity="fill"
+        app:tabIndicatorFullWidth="false"
+        app:tabMode="fixed"
+        app:tabTextAppearance="?attr/textAppearanceTitleSmall">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pestana_populares" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pestana_tendencias" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/buscador"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/fondo_buscador"
+        android:paddingStart="4dp"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="@string/pista_busqueda" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaPeliculas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="16dp"
+            android:scrollbarStyle="outsideOverlay"
+            tools:listitem="@layout/item_pelicula" />
+
+        <TextView
+            android:id="@+id/textoVacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="16dp"
+            android:gravity="center"
+            android:padding="32dp"
+            android:text="@string/sin_peliculas"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:visibility="gone"
+            app:drawableTint="?attr/colorOutline"
+            app:drawableTopCompat="@drawable/ic_pelicula_vacia" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progresoPeliculas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:trackCornerRadius="4dp" />
+
+        <include
+            android:id="@+id/vistaError"
+            layout="@layout/vista_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

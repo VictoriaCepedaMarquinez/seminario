@@ -1,0 +1,32 @@
+<resources>
+    <string name="nombre_app">Cinetheo</string>
+    <string name="titulo_peliculas">Movies</string>
+    <string name="pestana_populares">Popular</string>
+    <string name="pestana_tendencias">Trending this week</string>
+    <string name="titulo_detalle_pelicula">Movie details</string>
+    <string name="pista_busqueda">Search movies</string>
+    <string name="sin_peliculas">No movies found</string>
+    <string name="reintentar">Retry</string>
+    <string name="sinopsis">Synopsis</string>
+    <string name="sinopsis_no_disponible">Synopsis not available.</string>
+    <string name="no_disponible">Not available</string>
+    <string name="duracion">%1$d h %2$02d min</string>
+    <string name="duracion_minutos">%1$d min</string>
+    <string name="puntuacion_corta">%1$.1f</string>
+    <string name="puntuacion_detalle">%1$.1f / 10</string>
+    <string name="poster_generico">Movie poster</string>
+    <string name="descripcion_poster">Poster of %1$s</string>
+    <plurals name="cantidad_votos">
+        <item quantity="one">%1$d vote</item>
+        <item quantity="other">%1$d votes</item>
+    </plurals>
+
+    <string name="error_sin_internet">No internet connection. Check your Wi-Fi or mobile data and try again.</string>
+    <string name="error_tiempo_agotado">The server is taking too long to respond. Please try again.</string>
+    <string name="error_red">Could not reach the movie service. Check your connection and try again.</string>
+    <string name="error_no_autorizado">Could not authenticate with the movie service. Check the API credentials.</string>
+    <string name="error_no_encontrado">The requested movie could not be found.</string>
+    <string name="error_servidor">The movie service is not available right now. Please try again later.</string>
+    <string name="error_datos_invalidos">The information received is not valid.</string>
+    <string name="error_desconocido">An unexpected error occurred. Please try again.</string>
+</resources>

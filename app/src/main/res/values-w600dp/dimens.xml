@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="alto_poster_detalle">300dp</dimen>
+    <dimen name="ancho_poster_detalle">200dp</dimen>
+    <dimen name="alto_fondo">340dp</dimen>
+    <dimen name="superposicion_poster">160dp</dimen>
+    <dimen name="margen_horizontal_detalle">40dp</dimen>
+</resources>
