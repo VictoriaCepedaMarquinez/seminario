@@ -26,8 +26,10 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        val tmdbApiKey = localProperties.getProperty("TMDB_API_KEY", "")
-        val tmdbReadAccessToken = localProperties.getProperty("TMDB_READ_ACCESS_TOKEN", "")
+        val tmdbApiKey = localProperties.getProperty("TMDB_API_KEY")
+            ?: providers.gradleProperty("TMDB_API_KEY").getOrElse("")
+        val tmdbReadAccessToken = localProperties.getProperty("TMDB_READ_ACCESS_TOKEN")
+            ?: providers.gradleProperty("TMDB_READ_ACCESS_TOKEN").getOrElse("")
         buildConfigField("String", "TMDB_API_KEY", "\"$tmdbApiKey\"")
         buildConfigField("String", "TMDB_READ_ACCESS_TOKEN", "\"$tmdbReadAccessToken\"")
     }
